@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=latin-ext" rel="stylesheet">
+    <title>Kalkulator walut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Currency Calculator</h1>
+        <form>
+            <input type="number" id="amount" class="amount" min="0">
+            <select name="currency-old" id="currency-old">
+                <option value="pln">pln</option>
+                <option value="eur">eur</option>
+                <option value="usd">usd</option>
+            </select>
+            <label for="currency-new">convert to</label>
+            <select name="currency-new" id="currency-new">
+                <option value="eur">eur</option>
+                <option value="usd">usd</option>
+                <option value="pln">pln</option>
+            </select>
+            <button id="show" class="btn-show" type="button">Show result!</button>
+        </form>
+        <div class="result">
+            <p class="result-text"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
